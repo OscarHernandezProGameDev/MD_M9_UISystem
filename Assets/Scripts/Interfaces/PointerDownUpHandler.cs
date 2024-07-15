@@ -19,13 +19,15 @@ public class PointerDownUpHandler : MonoBehaviour, IPointerDownHandler, IPointer
     {
         text.color = Color.blue;
 
-        Debug.Log($"El puntero ha hecho click en el objeto: {eventData.pointerCurrentRaycast.gameObject.name}");
+        //Debug.Log($"El puntero ha hecho click en el objeto: {eventData.pointerCurrentRaycast.gameObject.name}");
+        Debug.Log($"El puntero ha hecho click en el objeto: {name}");
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
         text.color = Color.green;
 
-        Debug.Log($"El puntero ha soltado el click en el objeto: {eventData.pointerCurrentRaycast.gameObject.name}");
+        //Debug.Log($"El puntero ha soltado el click en el objeto: {eventData.pointerCurrentRaycast.gameObject.name}");
+        Debug.Log($"El puntero ha soltado el click en el objeto: {name}");
     }
 }
